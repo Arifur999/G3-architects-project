@@ -1,144 +1,254 @@
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
+
 .regular-font {
     font-family: "regular-font", serif;
     font-weight: 400;
     font-style: normal;
-  }
-  *{
+}
+
+* {
     margin: 0;
-  }
-  /* shared text */
-.disply-flex{
+}
+
+* p {
+    color: rgba(66, 66, 66, 1);
+}
+
+/* shared text */
+.disply-flex {
     display: flex;
 }
-.primary-btn{
+
+.primary-btn {
     background-color: rgba(255, 144, 14, 1);
     padding: 18px 22px;
     border-radius: 8px;
     color: white;
     font-weight: 500;
-    font-size: 1em;
+    font-size: 1rem;
     border: none;
-    cursor:pointer;
+    cursor: pointer;
 }
-.dark2{
+
+.dark2 {
     color: rgba(66, 66, 66, 1);
 }
 
 
 
 /* navber */
-.header{
+.header {
     background-color: rgba(255, 144, 14, 0.1);
     max-width: 1920px;
     margin: 0 auto;
 }
-.nav-links{
+
+.nav-links {
     list-style: none;
 }
-.nav-links a{
+
+.nav-links a {
     text-decoration: none;
     padding-right: 30px;
     color: rgba(66, 66, 66, 1);
 
 
 }
-.nav-header{
-    justify-content:space-around;
+
+.nav-header {
+    justify-content: space-around;
     padding: 30px 0px 100px 0px;
     align-items: center;
     gap: 180px;
 }
-.brand{
-    font-size: 2.6em;
+
+.brand {
+    font-size: 2.6rem;
     font-weight: bold;
 }
-.bannar-img{
+
+.bannar-img {
     max-width: 1140px;
     padding-top: 20px;
 }
-.bannar{
+
+.bannar {
     align-items: center;
     text-align: center;
 }
-.bannar-text h1{
-    font-size: 2.7em;
+
+.bannar-text h1 {
+    font-size: 2.7rem;
     font-weight: bold;
     margin-bottom: 20px;
 }
-.bannar-text p{
-    color:rgba(114, 114, 114, 1) ;
+
+.bannar-text p {
+    color: rgba(114, 114, 114, 1);
     margin-bottom: 30px;
 }
+
 /* section grp */
 
-.grp{
+.grp {
     max-width: 1140px;
     margin: 50px auto;
 }
-.grp-img img{
+
+.grp-img img {
     width: 280px;
     height: 280px;
 }
-.grp-img{
+
+.grp-img {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
 }
-.grp-txt{
-    font-size: 1.8em;
-    color:rgba(114, 114, 114, 1) ;
-    padding: 100px 0px 10px  30px;
+
+.grp-txt {
+    font-size: 1.8rem;
+    color: rgba(114, 114, 114, 1);
+    padding: 100px 0px 10px 30px;
 
 }
-.sp1{
+
+.sp1 {
     font-weight: bold;
     color: rgba(19, 19, 19, 1);
 }
-.sp2{
+
+.sp2 {
     font-weight: bold;
     color: rgba(255, 144, 14, 1);
 }
 
 
+/* section feature */
+.feature {
+    max-width: 1140px;
+    margin: 50px auto;
+}
 
+.feature-img {
+    width:calc(100% - 50px)/2;
+    padding-left: 50px;
 
+    max-width: 600px;
+}
 
-/* section */
+.feature-info h1 {
+    border-left: 5px solid rgba(255, 144, 14, 1);
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: 2.6rem;
+    margin: 20px 5px;
+}
+
+.feature-info h4 {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.box1,
+.box2,
+.box3,
+.box4 {
+    margin top: 20px;
+    padding: 30px 40px 30px 30px;
+    gap: 20px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.25);
+
+}
+
+.box1,
+.box2,
+.box3,
+.box4, h4{
+margin: 18px 0px;
+font-weight: 500;
+font-size: 1rem;
+}
+.exp{
+    font-weight: bold;
+    font-size: 4rem;
+}
+.exp-btn{
+padding: 20px auto;
+margin-top: -80px;
+margin-left: -30px;
+}
+
+.disply-none{
+    display: none;
+}
+
 
 /* responsive */
 /* normal devices */
-@media screen and (max-width:576px){
-    .nav-header, .nav-links{
+@media screen and (max-width:576px) {
+
+    .nav-header,
+    .nav-links {
         flex-direction: column;
         padding: 20px;
         gap: 10px;
     }
-    .bannar-img{
+
+    .bannar-img {
         width: 100%;
     }
 
-.grp{
-    flex-direction: column;
-
-}
-.grp-img{
-    grid-template-columns: repeat(1,1fr);
-    margin: 0 auto;
-}
-
-}
-/* tablet */
-@media screen and (min-width:576px) and (max-width:768px) {
-    .bannar-img{
-        width: 100%;
-    }
-    .grp{
+    .grp {
         flex-direction: column;
+
     }
-    .grp-img{
-        grid-template-columns: repeat(2,1fr);
+    .grp-img {
+        grid-template-columns: repeat(1, 1fr);
         margin: 0 auto;
     }
 
+
+
+
+
+    .feature-info{
+        padding: 0 10px;
     }
+.feature{
+    flex-direction: column;
+}
+
+
+
+    .feature img{
+    width: 100%;
+    padding: 0;
+}
+
+.exp-btn{
+    margin: 20px 0;
+    
+}
+
+
+
+
+}
+
+/* tablet */
+@media screen and (min-width:576px) and (max-width:768px) {
+    .bannar-img {
+        width: 100%;
+    }
+
+    .grp {
+        flex-direction: column;
+    }
+
+    .grp-img {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
+    }
+
+}
